@@ -1,0 +1,10 @@
+[Unit]
+Description=Light Strip Helper
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python3 /home/gpizarro/light_strip/light_strip.py
+
+[Install]
+WantedBy=multi-user.target
